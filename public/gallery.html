@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | TIMEZONE</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fc;
+}
+
+header {
+    background: #101827;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffb52e;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #ffb52e;
+}
+
+.banner {
+    background: #101827;
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.banner h1 {
+    font-size: 45px;
+    color: #ffb52e;
+}
+
+.banner p {
+    margin-top: 15px;
+    color: #ddd;
+}
+
+.gallery {
+    padding: 65px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000012;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+}
+
+.item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.item h3 {
+    padding: 18px;
+    text-align: center;
+    color: #172033;
+}
+
+footer {
+    background: #080f1c;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer span {
+    color: #ffb52e;
+}
+
+@media(max-width:700px) {
+    header {
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">TIMEZONE.</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/partner">Partners</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+
+
+<section class="banner">
+    <h1>OUR GALLERY</h1>
+    <p>Explore our amazing smartwatch collections.</p>
+</section>
+
+
+<section class="gallery">
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?auto=format&fit=crop&w=700&q=80">
+        <h3>Ultra Smartwatch</h3>
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=700&q=80">
+        <h3>Classic Smartwatch</h3>
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1544117519-31a4b719223d?auto=format&fit=crop&w=700&q=80">
+        <h3>Sport Smartwatch</h3>
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80">
+        <h3>Premium Collection</h3>
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=700&q=80">
+        <h3>Luxury Collection</h3>
+    </div>
+
+    <div class="item">
+        <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=700&q=80">
+        <h3>Modern Collection</h3>
+    </div>
+
+</section>
+
+
+<footer>
+    <p>© 2026 <span>TIMEZONE</span>. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
